@@ -15,7 +15,7 @@ for (i = 0; i < acc.length; i++) {
 //the second accordion
 var acc_2 = document.getElementsByClassName("acc");
 var arrows = document.getElementsByClassName("roatate_arrow");
-console.log(white_arr_mobile);
+var white_arr_mobile = document.getElementById("arrow_mobile");
 for (i = 0; i < acc_2.length; i++) {
   acc_2[i].addEventListener("click", function () {
     var arrow = this.nextElementSibling;
