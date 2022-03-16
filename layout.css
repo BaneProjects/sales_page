@@ -626,11 +626,11 @@ button:hover {
   margin-top: 20px;
 }
 .section_5 .inner .wrapper {
-  display: flex;
+  
   margin: 50px 0 40px;
 }
 .section_5 .inner .wrapper .options {
-  width: 395px;
+  max-width: 395px;
   font-size: 22px;
   line-height: 36px;
   font-weight: bold;
@@ -660,6 +660,17 @@ button:hover {
   font-size: 22px;
   line-height: 28px;
   margin-bottom: 0;
+}
+.section_5 .open {
+  padding: 0 18px;
+  margin:0;
+  max-height: 0;
+  word-break: break-all;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+.section_5 .text {
+  color: white;
 }
 
 .btn_contain {
@@ -1843,15 +1854,12 @@ h2 {
   .section_5 .manhood_desktop_text {
     display: none;
   }
-  .section_5 .first_arrow {
-    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg)
-      brightness(98%) contrast(108%);
-  }
+  
   .section_5 .inner .wrapper {
     flex-wrap: wrap;
   }
   .section_5 .inner .wrapper .options {
-    margin: 20px 0px 20px;
+    margin: 20px auto
   }
   .section_5 .option_wrapper {
     margin: 0 auto;
@@ -1863,9 +1871,18 @@ h2 {
     background-color: white;
     color: black;
   }
-  .section_5 .inner .wrapper .options .optimize_red {
+  /*.section_5 .inner .wrapper .options .single_option {
+    background-color: white;
+    color: black;
+  }*/
+
+  .section_5 .inner .wrapper .options .single_option.active {
     background-color: #a31b21;
     color: white;
+  }
+  .section_5 .inner .wrapper .options .single_option.active .roatate_arrow {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg)
+    brightness(98%) contrast(108%);
   }
   .arrow_desktop {
     display: none;
@@ -2356,7 +2373,9 @@ h2 {
   .section_12 > .inner > .frame > .content .paragraf span {
     font-size: 12px;
   }
+  
 }
+
 
 @media screen and (max-width: 335px) {
   .section_12 > .inner > .frame {
@@ -2368,14 +2387,3 @@ h2 {
   }
 }
 
-.section_5 .open {
-  padding: 0 18px;
-  margin:0;
-  max-height: 0;
-  word-break: break-all;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
-}
-.section_5 .text {
-  color: white;
-}
