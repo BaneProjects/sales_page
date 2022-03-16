@@ -1716,6 +1716,7 @@ h2 {
   }
   .section_2 .safe_and_effective_mobile {
     display: block;
+    text-align: center;
     font-family: atletico;
   }
   .section_3 .heading_for_mobile {
@@ -1923,9 +1924,10 @@ h2 {
   }
   .section_6 .full_list_ing button {
     border: none;
-    width: 85%;
+    width: 80%;
     font-size: 24px;
     font-weight: 400;
+    margin:  0 auto;
     cursor: pointer;
   }
   .section_7 .first_list li p {
@@ -2337,7 +2339,7 @@ h2 {
     margin: 50px 0 40px;
   }
   .section_5 .inner .wrapper .options {
-    max-width: 395px;
+    /*max-width: 395px;*/
     width: 100%;
     font-size: 22px;
     line-height: 36px;
