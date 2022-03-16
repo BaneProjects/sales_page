@@ -1,3 +1,11 @@
+@font-face {
+  font-family: atletiko;
+  src: url(./fonts/Atletico\ Bold_0.ttf);
+}
+@font-face {
+  font-family: SegoeUi;
+  src: url(./fonts/segoeui_0.ttf);
+}
 * {
   box-sizing: border-box;
   transition: all 0.2s ease;
@@ -14,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .holder_pyramid {
   background-image: url(images/shape_289.png), url(images/layer_275.png);
   background-repeat: no-repeat;
@@ -104,7 +113,9 @@ section.header nav .option-btn2 {
   padding: 15px 30px;
   height: 40px;
 }
-
+a {
+  text-decoration: none;
+}
 section.s1 {
   position: relative;
   background-color: transparent;
@@ -115,12 +126,26 @@ section.s1 {
   background-size: auto;
   min-height: 732px;
 }
+.s1 .nutrition_for_your_manhood {
+  padding-top: 10px;
+}
+.s1 .nutrition_for_your_manhood_desktop {
+  font-size: 24px;
+  font-family: atletiko;
+}
+.s1 .safely_naturally_desktop {
+  font-size: 58px;
+  font-family: atletiko;
 
+  font-weight: bold;
+  color: #a31b21;
+  line-height: 62px;
+}
 .section_2 {
   background-color: white;
   min-height: 413px;
 }
-.section_2 .inner .doctor_img {
+.s2 .section_2 .inner .doctor_img {
   display: flex;
 }
 .section_3 {
@@ -137,6 +162,7 @@ section.s1 {
   background-color: #28272c;
   padding-bottom: 40px;
 }
+
 .section_6 {
   background: white;
   padding-bottom: 50px;
@@ -145,16 +171,11 @@ section.s1 {
   background-color: #27272b;
   padding-bottom: 40px;
 }
-.sutrition_for_your_manhood img {
-  margin-top: 30px;
-}
+
 .safely_naturally {
   margin-bottom: 23px;
 }
-.safely_naturally img {
-  margin-top: 15px;
-  width: 75%;
-}
+
 .alpha_strenght {
   position: relative;
 
@@ -185,13 +206,14 @@ section.s1 {
 .bullets {
   display: flex;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 .bullets p {
   font-weight: 600;
   font-size: 24px;
   margin: 0px;
   margin-left: 17px;
+  font-family: SegoeUi;
 }
 .order_btn {
   display: flex;
@@ -212,10 +234,18 @@ section.s1 {
   align-items: center;
   height: 100px;
   position: absolute;
-  width: 100%;
+  width: 63%;
   bottom: 0px;
   background-image: url("images/rectangle_124.png");
   background-repeat: no-repeat;
+}
+.s1 .img_circle {
+  transform: translate(0px, 10px);
+  width: 64px;
+  height: 54px;
+}
+.s1 .img_circle2 {
+  transform: translate(-5px, 8px);
 }
 .s1_footer .inner {
   display: flex;
@@ -284,12 +314,14 @@ section.s1 {
   text-align: center;
 }
 
-/*section 2*/
-
 .section_2 {
   padding-top: 60px;
 }
-
+.section_2 .safe_and_effective_desktop {
+  font-family: atletico;
+  font-size: 36px;
+  line-height: 36px;
+}
 .section_2 .inner {
   display: flex;
   justify-content: center;
@@ -332,6 +364,16 @@ section.s1 {
   right: 154px;
 }
 
+.section_3 .our_research_team_discove_desktop {
+  font-size: 45px;
+  font-family: atletico;
+  font-weight: 600;
+  color: #a31b21;
+  text-align: center;
+  padding: 0 45px;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
 .section_3 .inner .heading h1 {
   font-size: 28px;
   font-family: "Segoe UI";
@@ -496,7 +538,11 @@ button {
   background-color: #00ce2d;
   font-family: "Roboto";
   margin-left: 7px;
+  cursor: pointer;
   font-weight: 600;
+}
+button:hover {
+  background-color: #0a6b1e;
 }
 .section_4 .inner .alpha_strenght_heading {
   display: flex;
@@ -553,6 +599,17 @@ button {
   text-align: center;
   padding-top: 70px;
 }
+.section_5 .manhood_wrapper .manhood_desktop_text {
+  color: white;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: atletico;
+  margin: 0;
+}
+.section_5 .btn_contain #order_now_text {
+  font-size: 18px;
+}
 .section_5 .day_money p {
   color: white;
 }
@@ -592,6 +649,7 @@ button {
   align-items: center;
   border-radius: 10px;
   min-height: 55px;
+  cursor: pointer;
 }
 .section_5 .inner .wrapper .options .reduce_day {
   color: white;
@@ -607,7 +665,6 @@ button {
 .btn_contain {
   display: flex;
   justify-content: center;
-
   align-items: center;
 }
 
@@ -802,7 +859,6 @@ button {
   background-image: url(images/rectangle_133.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 45px;
 }
 
 .section_8 .inner .head_line p {
@@ -869,12 +925,13 @@ button {
   background-position-x: 30px;
 }
 .section_9 .two_images .frame {
-  margin-top: 145px;
+  margin-top: 160px;
 }
 .section_9 .holder_pyramid {
   background-image: url(images/shape_289_copy_6.png);
   background-repeat: no-repeat;
   height: 40px;
+  margin-top: 15px;
 }
 .section_9 .content p {
   font-size: 22px;
@@ -1201,11 +1258,11 @@ h2 {
 }
 .section_13 {
   background-color: white;
-  padding: 90px 0 80px;
+  padding: 50px 0 80px;
 }
 .section_13 .heading {
   text-align: center;
-  padding: 50px 0px 60px;
+  padding: 40px 0px 60px;
 }
 .section_13 .customer_item {
   display: flex;
@@ -1272,9 +1329,7 @@ h2 {
 .section_14 .contact_company span {
   font-weight: bold;
 }
-.section_14 .question {
-  padding-top: 50px;
-}
+
 .section_14 .question > div:last-child {
   border: none;
 }
@@ -1301,6 +1356,35 @@ h2 {
 .section_14 .inner .btn_contain {
   padding: 70px 0px 70px;
 }
+.section_14 .accordion {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
+}
+.section_14 .accordion:after {
+  content: "\002B";
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  float: right;
+  margin-left: 5px;
+}
+.section_14 .active:after {
+  content: "\2212";
+}
+.section_14 .panel .optimized {
+  font-weight: 400;
+  text-decoration: underline;
+}
+.section_14 .panel a {
+  text-decoration: underline;
+}
+.section_14 .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
 .section_15 {
   background-color: white;
 }
@@ -1320,15 +1404,13 @@ h2 {
 .s1 .btn_contain {
   justify-content: flex-start;
 }
-.sutrition_for_your_manhood .for_mobile_img {
+.s1 .safely_naturally_mobile {
   display: none;
 }
-.safely_naturally_mobile {
+.s1 .nutrition_for_your_manhood_mobile {
   display: none;
 }
-.alpha_strenght_mobile {
-  display: none;
-}
+
 .tree_bottle_for_mobile {
   display: none;
 }
@@ -1353,14 +1435,40 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.section_5 .arrow_mobile {
+.section_4 .alpha_img_desktop {
+  color: #a31b21;
+  font-size: 45px;
+  line-height: 51px;
+  font-family: atletico;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+.section_5 #arrow_mobile {
   display: none;
 }
-.section_5 .manhood_mobile {
+.section_5 .for_only_mobile_img {
   display: none;
 }
-.section_5 .option_mobile {
+.section_5 .manhood_mobile_text {
   display: none;
+}
+
+.section_6 .head_line .safe_scientifically_desktop {
+  font-size: 45px;
+  font-family: atletico;
+  font-weight: 600;
+  line-height: 50px;
+  color: #a31b21;
+  margin: 0;
+}
+.section_7 .head_line .safe_scientifically_prove_for_desktop {
+  color: white;
+  font-size: 45px;
+  line-height: 50px;
+  font-family: atletico;
+  font-weight: 600;
+  margin: 0;
 }
 .section_7 .how_alpha_strength_compar_for_mobile {
   display: none;
@@ -1370,6 +1478,13 @@ h2 {
 }
 .safe_scientifically_mobile {
   display: none;
+}
+.section_8 .head_line #img-alpha {
+  font-size: 45px;
+  line-height: 50px;
+  color: #a31b21;
+  font-family: atletico;
+  font-weight: 600;
 }
 .section_9 .alpha_strength_is_support_mobile {
   display: none;
@@ -1382,7 +1497,14 @@ h2 {
 .section_9 .bottle_mobile {
   display: none;
 }
-
+.section_9 .alpha_strength_is_support_desktop {
+  font-size: 45px;
+  line-height: 50px;
+  font-family: atletico;
+  font-weight: 600;
+  color: #a31b21;
+  margin: 0;
+}
 .section_9 .box_mobile {
   display: none;
 }
@@ -1390,26 +1512,69 @@ h2 {
 .section_9 .img_doctor_mobile {
   display: none;
 }
+.section_10 .heading_desktop_section_10 {
+  color: white;
+  font-family: atletico;
+  font-size: 45px;
+  line-height: 52px;
+  font-weight: 600;
+}
+
 .section_10 .inner .heading .reasons_img_mobile {
   display: none;
 }
-.section_11 .mobile_heading {
-  display: none;
+.section_11 .desktop_heading_text {
+  color: #a31b21;
+  font-size: 45px;
+  line-height: 50px;
+  font-family: atletico;
+  font-weight: 600;
 }
-.section_12 .day_no_questions_aske_2_mobile {
-  display: none;
+.section_12 .day_120 {
+  font-size: 45px;
+  line-height: 50px;
+  color: #a31b21;
+  font-family: atletico;
 }
 .section_13 .what_customers_are_saying_mobile {
   display: none;
 }
-.section_14 .frequently_asked_question_mobile {
-  display: none;
+.section_13 .what_customers_are_saying {
+  font-size: 45px;
+  line-height: 50px;
+  color: #a31b21;
+  font-family: atletico;
+  font-weight: 600;
 }
+.section_14 .frequently_asked_questions {
+  font-size: 45px;
+  line-height: 50px;
+  font-family: atletico;
+  color: #a31b21;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1280px) {
   .s1 {
     background-image: url(mobile_images/rectangle_2.jpg) !important;
     background-size: cover !important;
     background-repeat: no-repeat;
+  }
+  .s1 .nutrition_for_your_manhood_desktop {
+    display: none;
+  }
+  .s1 .nutrition_for_your_manhood_mobile {
+    display: block;
+    text-align: center;
+    font-family: atletiko;
+  }
+  .s1 .safely_naturally_mobile {
+    display: block;
+    text-align: center;
+    font-size: 37px;
+    color: #a31b21;
+    font-weight: 400px;
+    font-family: atletiko;
   }
   .s1 .bullet_points {
     width: 23x;
@@ -1431,14 +1596,6 @@ h2 {
   }
   .header nav ul {
     display: none;
-  }
-  .sutrition_for_your_manhood .for_desktop {
-    display: none;
-  }
-  .sutrition_for_your_manhood .for_mobile_img {
-    display: block;
-    margin: 0 auto;
-    padding-top: 30px;
   }
 
   .safely_naturally_desktop {
@@ -1487,13 +1644,23 @@ h2 {
   .bullets_wrapper .bullets {
     margin-bottom: 10px;
   }
+
   .s1 .btn_contain_for_mobile {
     display: block;
   }
+  .btn_contain_for_mobile,
+  .ing_btn_and_text,
+  a {
+    text-decoration: none;
+  }
+
   .ing_btn_and_text {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .ing_btn_and_text a {
+    text-decoration: none;
   }
   .s1 .inner .btn_contain_for_desktop {
     display: none;
@@ -1503,6 +1670,7 @@ h2 {
   }
   .s1 .s1_footer {
     position: unset;
+    width: 100%;
   }
   .s1 .s1_footer .inner {
     flex-direction: column;
@@ -1538,7 +1706,16 @@ h2 {
   }
   .section_2 .safe_and_effective_mobile {
     display: block;
-    margin-bottom: 25px;
+    font-family: atletico;
+  }
+  .section_3 .heading_for_mobile {
+    display: block;
+    font-size: 30px;
+    color: #a31b21;
+    line-height: 38px;
+    font-family: atletico;
+    text-align: center;
+    font-weight: 600;
   }
   .section_3 .our_research_team_discove_desktop {
     display: none;
@@ -1652,11 +1829,23 @@ h2 {
   .section_4 .ing_btn_and_text_mobile {
     display: flex;
   }
-  .section_5 .inner .wrapper .options div {
-    height: 55px;
+  .section_5 .manhood_wrapper .manhood_mobile_text {
+    font-size: 29px;
+    line-height: 37px;
+    color: white;
+    font-family: atletico;
+    font-weight: 600;
+    margin: 0;
   }
-  .section_5 .manhood_desktop {
+  .section_5 .for_only_mobile_img {
+    display: block;
+  }
+  .section_5 .manhood_desktop_text {
     display: none;
+  }
+  .section_5 .first_arrow {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg)
+      brightness(98%) contrast(108%);
   }
   .section_5 .inner .wrapper {
     flex-wrap: wrap;
@@ -1681,26 +1870,18 @@ h2 {
   .arrow_desktop {
     display: none;
   }
-  .section_5 .arrow_mobile {
+  .section_5 #arrow_mobile {
     display: block;
+    transform: rotate(90deg);
   }
   .img_holder > div {
     display: none;
-  }
-
-  .section_5 .option_mobile {
-    display: block;
-    color: white;
-  }
-  .section_5 .option_mobile p {
-    font-weight: 400;
-    color: white;
   }
   .section_5 .manhood_mobile {
     display: block;
     margin: auto;
   }
-  .section_5 .roatate_arrow {
+  .section_5 .roatate_arrow_mobile {
     transform: rotate(90deg);
   }
 
@@ -1720,9 +1901,14 @@ h2 {
   .section_6 .single_img {
     margin-bottom: 30px;
   }
-  .safe_scientifically_mobile {
+  .section_6 .head_line .safe_scientifically_mobile {
     display: block;
     margin: 0 auto;
+    font-size: 29px;
+    line-height: 37px;
+    font-family: atletico;
+    color: #a31b21;
+    font-weight: 600;
   }
   .section_6 .head_line p {
     padding: 10px;
@@ -1732,13 +1918,22 @@ h2 {
     width: 85%;
     font-size: 24px;
     font-weight: 400;
+    cursor: pointer;
   }
   .section_7 .first_list li p {
     width: 31%;
   }
-  .section_7 .how_alpha_strength_compar_for_mobile {
+  .section_7 .head_line .how_alpha_strength_compar_for_mobile {
     display: block;
     margin: 0 auto;
+    font-size: 29px;
+    line-height: 38px;
+    color: white;
+    font-family: atletico;
+    font-weight: 600;
+  }
+  .section_7 .head_line {
+    padding-top: 50px;
   }
   .section_7 .comparison_container li p {
     font-size: 14px;
@@ -1839,8 +2034,17 @@ h2 {
   .section_8 .img-alpha-mobile {
     display: block;
     width: 80%;
+    font-size: 29px;
+    line-height: 37px;
+    color: #a31b21;
+    font-family: atletico;
+    font-weight: 600;
   }
-  .section_8 .img-alpha {
+  .section_8 .inner .head_line {
+    padding-top: 50px;
+  }
+
+  .section_8 #img-alpha {
     display: none;
   }
   .section_8 .head_line {
@@ -1879,6 +2083,11 @@ h2 {
     display: block;
     margin: 0 auto;
     padding-top: 20px;
+    font-size: 29px;
+    line-height: 37px;
+    font-family: atletico;
+    color: #a31b21;
+    text-align: center;
   }
   .section_9 .holder_pyramid_mobile {
     display: block;
@@ -1978,6 +2187,10 @@ h2 {
   .section_10 .inner .heading .reasons_img_desktop {
     display: none;
   }
+  .section_10 .heading_desktop_section_10 {
+    font-size: 29px;
+    line-height: 37px;
+  }
   .section_10 .inner .heading .reasons_img_mobile {
     display: inline;
   }
@@ -1998,20 +2211,17 @@ h2 {
   .section_10 .contain_btn {
     margin-top: 10px;
   }
-  .section_10 .inner .heading img {
-    width: 350px;
-  }
+
   .section_10 .holder_pyramid {
     margin: 0 auto;
     width: 90%;
   }
-  .section_11 .desktop_heading {
-    display: none;
+
+  .section_11 .desktop_heading_text {
+    font-size: 29px;
+    line-height: 37px;
   }
-  .section_11 .mobile_heading {
-    display: block;
-    margin: 0 auto;
-  }
+
   .section_11 .holder_pyramid {
     width: 90%;
     margin: 0 auto;
@@ -2019,8 +2229,16 @@ h2 {
   .section_11 .value_contain .best_value {
     margin: 30px 0 30px;
   }
+  .section_12 .heading {
+    padding-top: 20px;
+  }
   .section_12 {
     padding-bottom: 0px;
+  }
+  .section_12 .day_120 {
+    font-size: 30px;
+    line-height: 38px;
+    padding: 0px 20px;
   }
   .section_12 > .inner > .heading > img:nth-child(1) {
     display: none;
@@ -2036,7 +2254,7 @@ h2 {
     background-position-x: center;
     background-position-y: inherit;
     width: 100%;
-    min-height: 120vh;
+    min-height: 110vh;
 
     padding: unset;
   }
@@ -2049,9 +2267,7 @@ h2 {
     font-size: 17px;
     line-height: unset;
   }
-  .section_12 .day_no_questions_aske_2_mobile {
-    display: block;
-  }
+
   .section_12 .holder_pyramid {
     width: 90%;
     margin: 0 auto;
@@ -2059,6 +2275,11 @@ h2 {
   .section_13 .what_customers_are_saying_desktopp {
     display: none;
   }
+  .section_13 .what_customers_are_saying {
+    font-size: 29px;
+    line-height: 37px;
+  }
+
   .section_13 .holder_pyramid {
     margin: 0 auto;
     width: 95%;
@@ -2073,22 +2294,16 @@ h2 {
     padding-bottom: 10px;
   }
   .section_13 .heading {
-    padding: 50px 0px 10px;
+    padding: 20px 0px 10px;
   }
   .section_13 .day_money p {
     color: #656565;
   }
-  .section_14 .frequently_asked_question_desktop {
-    display: none;
-  }
+
   .section_14 .inner {
     padding: 0px 10px;
   }
-  .section_14 .frequently_asked_question_mobile {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 10px;
-  }
+
   .section_14 .asked_question_header {
     padding: 50px 0 17px;
   }
@@ -2097,6 +2312,10 @@ h2 {
   }
   .section_14 .day_money p {
     color: #656565;
+  }
+  .section_14 .frequently_asked_questions {
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
@@ -2129,6 +2348,16 @@ h2 {
     width: 85%;
   }
 }
+@media screen and (max-width: 375px) {
+  .section_12 > .inner > .frame {
+    min-height: 110vh;
+  }
+  .section_12 > .inner > .frame > .content .paragraf p,
+  .section_12 > .inner > .frame > .content .paragraf span {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 335px) {
   .section_12 > .inner > .frame {
     min-height: unset;
@@ -2137,4 +2366,15 @@ h2 {
   .section_12 > .inner > .frame > .content .paragraf span {
     font-size: 14px;
   }
+}
+
+.section_5 .open {
+  padding: 0 18px;
+  max-height: 0;
+  word-break: break-all;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+.section_5 .text {
+  color: white;
 }
