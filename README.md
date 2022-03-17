@@ -1,1 +1,1 @@
-Vercel : https://sales-page-j2ii7jv6j-baneprojects.vercel.app
+Vercel : https://sales-page-n61y7w01l-baneprojects.vercel.app
