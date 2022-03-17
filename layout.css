@@ -16,6 +16,7 @@ html {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,20 +31,23 @@ body {
   height: 40px;
   width: 100%;
 }
-nav .hamburger_meni {
+.hamburger_meni {
   display: none;
 }
-
+.header .logo {
+  display: flex;
+  align-items: center;
+}
 nav ul {
   display: flex;
   align-items: center;
-  margin-left: 69px;
 }
 nav ul li {
   list-style: none;
 }
-nav ul li p {
+nav ul li a {
   font-size: 16px;
+  font-family: "Segoe UI";
 }
 .inner {
   max-width: 1172px;
@@ -51,10 +55,7 @@ nav ul li p {
   margin-left: auto;
   margin-right: auto;
 }
-.logo img {
-  padding: 10px 0px 10px;
-  width: 100%;
-}
+
 .flex-row-spread {
   display: -webkit-inline-box;
   flex-direction: row;
@@ -85,19 +86,19 @@ section.header {
 
 section.header nav {
   display: flex;
-
   align-items: center;
   font-size: 0.7rem;
   color: #060606;
   height: 65px;
 }
-nav ul li p.option {
+nav ul li a.option {
   padding-left: 16px;
   padding-right: 16px;
   height: 1.5rem;
   line-height: 1.5rem;
   border-left: 1px solid gray;
-  font-weight: 500;
+  font-weight: 600;
+  color: black;
 }
 
 section.header nav .option-btn {
@@ -106,11 +107,14 @@ section.header nav .option-btn {
 }
 section.header nav .option-btn2 {
   display: flex;
-  align-items: center;
+ justify-content: center;
+ align-items: center;
+  width: 140px;
   background-color: #01ce31;
   border-radius: 0.33rem;
   color: white;
-  padding: 15px 30px;
+ 
+  font-size: 16px;
   height: 40px;
 }
 a {
@@ -178,8 +182,8 @@ section.s1 {
 
 .alpha_strenght {
   position: relative;
-
   margin-bottom: 12px;
+  font-family: SegoeUi;
 }
 .alpha_strenght p {
   position: absolute;
@@ -659,7 +663,7 @@ button:hover {
 }
 .section_5 .open {
   padding: 0 18px;
-  margin:0;
+  margin: 0;
   max-height: 0;
   word-break: break-all;
   overflow: hidden;
@@ -1567,6 +1571,46 @@ h2 {
     background-size: cover !important;
     background-repeat: no-repeat;
   }
+  /*mobile*/
+  .logo .first_logo {
+    padding: 10px 0px 10px;
+    width: 50%;
+    height: 60px;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header .flex-row-spread {
+    flex-direction: column;
+  }
+  .hamburger_meni #meni {
+    height: 35px;
+  }
+  .hamburger_meni .close {
+    height: 35px;
+  }
+  nav {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+  }
+  section.header nav {
+    height: auto;
+  }
+  nav ul li a.option {
+    color: #a31b21;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  section.header nav .option-btn2 {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
   .s1 .nutrition_for_your_manhood_desktop {
     display: none;
   }
@@ -1593,16 +1637,28 @@ h2 {
   .s1 .day_money {
     color: #6e6f6f;
   }
-  .header nav .hamburger_meni {
+  .hamburger_meni {
     display: block;
+  }
+
+  .close {
+    display: none;
+  }
+  .header.open .close {
+    display: block;
+  }
+  .header.open #meni {
+    display: none;
   }
   .header .flex-row-spread {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
   }
   .header nav ul {
     display: none;
+  }
+  .header.open nav ul {
+    display: block;
   }
 
   .safely_naturally_desktop {
@@ -1851,13 +1907,12 @@ h2 {
   .section_5 .manhood_desktop_text {
     display: none;
   }
-  
-  
+
   .section_5 .inner .wrapper {
     flex-wrap: wrap;
   }
   .section_5 .inner .wrapper .options {
-    margin: 20px auto
+    margin: 20px auto;
   }
   .section_5 .option_wrapper {
     margin: 0 auto;
@@ -1871,9 +1926,9 @@ h2 {
   }
   .section_5 .inner .wrapper .options .single_option.active .roatate_arrow {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg)
-    brightness(98%) contrast(108%);
+      brightness(98%) contrast(108%);
   }
- 
+
   .img_holder > div {
     display: none;
   }
@@ -1881,7 +1936,7 @@ h2 {
     display: block;
     margin: auto;
   }
- 
+
   .section_5 .inner .wrapper {
     margin: 0;
   }
@@ -1915,7 +1970,7 @@ h2 {
     width: 80%;
     font-size: 24px;
     font-weight: 400;
-    margin:  0 auto;
+    margin: 0 auto;
     cursor: pointer;
   }
   .section_7 .first_list li p {
@@ -2368,9 +2423,7 @@ h2 {
   .section_12 > .inner > .frame > .content .paragraf span {
     font-size: 12px;
   }
-  
 }
-
 
 @media screen and (max-width: 335px) {
   .section_12 > .inner > .frame {
@@ -2381,4 +2434,3 @@ h2 {
     font-size: 14px;
   }
 }
-

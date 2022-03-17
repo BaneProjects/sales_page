@@ -22,14 +22,13 @@ for (i = 0; i < acc_2.length; i++) {
 
     console.log(arrow);
     var el = this.parentElement.parentElement.querySelector(".open");
-        var activeDiv = this.parentElement;
-        console.log(activeDiv)
+    var activeDiv = this.parentElement;
+    console.log(activeDiv);
     if (el.style.maxHeight) {
       activeDiv.classList.remove("active");
       el.style.maxHeight = null;
       arrow.style.transform = "rotate(0deg)";
       white_arr_mobile.style.transform = "rotate(90deg)";
-    
     } else {
       el.style.maxHeight = el.scrollHeight + "px";
       arrow.style.transform = "rotate(270deg)";
